@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Formulário</h1>
+    <form>
+      <div class="form-control">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="digite seu nome"/>
+      </div>
+
+      <div class="form-control">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="digite sua senha"/>
+      </div>
+
+      <div class="form-control">
+        <h3>Preferência:</h3>
+        <input type="checkbox" id="tecnologia"/>
+        <label for="tecnologia">Tecnologia</label>
+        <br />
+
+        <input type="checkbox" id="esporte"/>
+        <label for="esporte">Esporte</label>
+        <br />
+
+        <input type="checkbox" id="carros"/>
+        <label for="carros">Carros</label>
+        <br />
+      </div>
+
+      <div class="form-control">
+        <h3>Voce tem mais de 20 anos?</h3>
+        <label for="sim">Sim</label>
+        <input type="radio" name="idade" id="sim" />
+        <br>
+
+        <label for="nao">Não</label>
+        <input type="radio" name="idade" id="nao" />
+        <br>
+      </div>
+
+      <div class="form-control">
+        <button type="submit">Enviar</button>
+      </div>
+
+      <div class="form-control">
+        <h3>Digite um texto: </h3>
+        <textarea name="texto" cols="50" rows="10"></textarea>
+      </div>
+      
+    </form>
+
+  </div>
+</body>
+</html>

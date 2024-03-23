@@ -1,0 +1,50 @@
+#container{
+    background: rgb(188, 228, 240);
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    max-width: 970px;
+    box-shadow: 8px 8px rgb(125, 163, 175);    
+}
+
+.block{
+    display: flex;
+    
+}
+
+.box1{
+    background: green;
+    margin: 50px 50px 100px 50px;
+    padding: 30px 50px;
+    color: white;
+    
+    
+}
+
+.box2{
+    background: orangered;
+    margin: 50px 50px 100px 50px;
+    padding: 30px 70px 50px ;
+    color: white;
+}
+
+.box3{
+    background: blue;
+    margin: 50px 50px 100px 50px;
+    padding: 30px;
+    color: white;
+}
+
+.plus{
+    margin-top: 90px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.text{
+    margin: auto;
+    font-size: 25px;
+    margin-bottom: 80px;
+    
+    
+}

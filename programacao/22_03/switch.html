@@ -1,0 +1,16 @@
+<script>
+    saldo1 = parseFloat(window.prompt("Saldo do 1º mes: "))
+    saldo2 = parseFloat(window.prompt("Saldo do 2º mes: "))
+    saldo3 = parseFloat(window.prompt("Saldo do 3º mes: "))
+    tipo = parseInt(window.prompt("tipo de cliente: "))
+    saldo_medio = (saldo1 + saldo2 + saldo3) / 3
+
+    switch(tipo){
+        case 1: limite = saldo_medio * 0.1; break;
+        case 2: limite = saldo_medio * 0.15; break;
+        case 3: limite = saldo_medio * 0.2; break;
+        default: limite = saldo_medio *0.25
+    }
+
+    window.alert("Valor do limite: R$" + limite)
+</script>

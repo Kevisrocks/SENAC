@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        km = parseFloat(prompt("Digite quantos km"));
+
+        
+        if(km <= 100)
+           valor_km = 0.15268
+        else if (km <= 500.00)
+            valor_km = 0.25368
+        else if (km <= 1000)
+            valor_km = 0.45274
+        else 
+            valor_km = 0.62532
+        
+        reembolso = km * valor_km
+        
+
+        window.alert("eu reembolso foi de R$" + reembolso )
+
+    </script>
+</body>
+</html>

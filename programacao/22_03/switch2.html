@@ -1,0 +1,18 @@
+<script>
+    preco = parseFloat(prompt("Digite o preço"));
+    estado = prompt("Digite a sigla estado");
+    
+    
+    switch(estado){
+      case "SP" :
+        imposto = preco * 0.25; break
+      case "RJ" :
+        imposto = preco * 0.22; break
+      case "MG" : 
+        imposto = preco * 0.2; break
+        default:
+        imposto = preco * 0.18
+    }
+
+window.alert("O valor do imposto é R$ " + imposto)
+</script>

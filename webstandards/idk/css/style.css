@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: 30px auto ;
+    max-width: 750px;
+    /* flexbox */
+    display: flex;
+    box-shadow: 2px 2px lightslategrey;
+}
+
+.box1{
+    background: purple;
+    color: #fff;
+    max-width: 250px;
+    height: 150px;
+    margin: 20px;
+    /* margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px; */
+    border-width: 5px;
+    border-style: dotted;
+    border-color: yellow;
+
+}
+
+.box2{
+    background: gold;
+    color: black;
+    max-width: 250px;
+    height: 150px;
+    margin: 20px;
+    border: 5px solid red
+}
+
+.box1 h1, .box1 p, .box2 h1, .box2 p{
+    padding: 10px;
+    /* padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px; */
+}
+
