@@ -1,0 +1,17 @@
+<script>
+    valor_compra = parseFloat(window.prompt("Qual o valor da compra?"))
+    regiao = parseInt(prompt("Digite sua região"));
+
+    switch(regiao){
+        case 1: p_icms = 3.5; break;
+        case 2: p_icms = 4.5; break;
+        case 3: p_icms = 5.5; break;
+        case 4: p_icms = 6.5; break;
+        default: p_icms = 7.5;
+    }
+
+    v_icms = valor_compra * p_icms / 100;
+
+    window.alert("Valor do ICMS: R$" + v_icms)
+
+</script>
