@@ -1,0 +1,36 @@
+<script>
+    salario_bruto = parseFloat(window.prompt("Qual o salário bruto?"));
+
+    if(salario_bruto <=1000){
+        inss = salario_bruto * 0.03;
+    }
+    else if(salario_bruto > 1000 && salario_bruto <= 3000){
+        inss = salario_bruto * 0.04;
+    }
+    else if(salario_bruto > 3000 && salario_bruto <= 7000){
+        inss = salario_bruto * 0.05;
+    }
+    else{
+        inss = salario_bruto * 0.06;
+    }
+
+
+    if(salario_bruto <2500){
+        ir = 0
+    }
+    else if(salario_bruto >=2500 && 5000){
+        ir = salario_bruto * 0.05
+    }
+    else if (salario_bruto >=5000 && 10000){
+        ir = salario_bruto * 0.10
+    }
+    else{
+        ir = salario_bruto * 0.15
+    }
+
+    salario_liquido = salario_bruto - inss - ir;
+    
+    window.alert("Valor do INSS: R$ " + inss);
+    window.alert("Valor do IR: R$ " + ir);
+    window.alert("Salario liquido: R$ " + salario_liquido);
+</script>
