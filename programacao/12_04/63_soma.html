@@ -1,0 +1,17 @@
+<script>
+    soma = 0; //variavel acumuladora
+    x = 1; //variavel contadora
+
+    while(x <=5){
+        //for(x =1; x <=5; x=x+1) usando o loop for//
+        num = parseInt(window.prompt("digite um numero: "));
+        if(num % 2 == 0){
+            soma = soma + num;
+        }
+
+        x = x + 1;
+    }
+
+
+    window.alert("A soma dos numeros digitados é " + soma);
+</script>
