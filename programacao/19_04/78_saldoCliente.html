@@ -1,0 +1,15 @@
+<script>
+    saldo = parseFloat(window.prompt("Digite o valor do seu saldo"));
+
+   while(true){
+    valor = parseFloat(window.prompt("Qual o valor da compra?"))
+    if(valor > saldo){
+        window.alert("Compra não realizada. Saldo insuficiente");
+        break;
+    }
+    saldo = saldo - valor;
+    window.alert("Seu saldo atual é " + saldo);
+   }
+
+   window.alert("Saldo restante é de " + saldo);
+</script>

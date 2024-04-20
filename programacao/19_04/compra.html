@@ -1,0 +1,22 @@
+<script>
+    total_compra = 0;
+    while(true){
+        quantidade = parseInt(window.prompt("Quantidade de itens?"));
+        preco_unitario = parseFloat(window.prompt("Preço unitario?"));
+
+        
+        total_compra = total_compra + (quantidade * preco_unitario);
+
+        do{
+            ha_produtos = window.prompt("Há mais produtos para passar? (S/N)");
+            if(ha_produtos != "S" && ha_produtos != "N"){
+                window.alert("Responda apenas S ou N.");
+            }
+        }while(ha_produtos != "S" && ha_produtos != "N");
+
+        if(ha_produtos != "s"){
+            break;
+        }
+    }
+    window.alert("O valor da compra é " + total_compra);
+</script>

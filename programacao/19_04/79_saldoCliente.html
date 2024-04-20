@@ -1,0 +1,15 @@
+<script>
+    saldo = parseFloat(window.prompt("Qual o saldo inicial?"));
+
+    while (saldo > 0){
+        preco = parseFloat(window.prompt("Qual o preço do item"));
+        if(preco > saldo){
+            window.alert("Não foi possivel realizar a compra. Seu saldo é de " + saldo);
+            continue;
+        }
+        saldo = saldo - preco;
+        window.alert("Seu saldo atual é de " + saldo);
+    }
+    
+    window.alert("Acabou o dinheiro")
+</script>
