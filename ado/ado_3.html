@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        vitoria = parseFloat(window.prompt("Digite quantas vitórias sua equipe obteve"));
+        empate = parseFloat(window.prompt("Digite quantos empates sua equipe obteve"));
+        derrota = parseFloat(window.prompt("Digite quantas derrotas sua equipe obteve"));
+
+        partidas = vitoria + empate + derrota;
+        vitoria = vitoria * 3;
+        derrota = derrota * 0;
+        pontos = vitoria + empate + derrota;
+
+        aproveitamento = pontos * 100 / partidas / 3
+        
+        window.alert("Sua equipe obteve " + pontos + " pontos")
+        window.alert("Sua equipe obteve o aproveitamento de " + aproveitamento + "%")
+    </script>
+    
+</body>
+</html>

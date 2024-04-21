@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        vc = parseFloat(window.prompt("Digite o valor do m² construído"));
+        ac = parseFloat(window.prompt("Digite a área do m² construído"));
+        impostoPredial = vc * ac;
+        
+        mt = parseFloat(window.prompt("Digite o valor do m² do terreno"));
+        at = parseFloat(window.prompt("Digite a área do m² do terreno"));
+        impostoTerritorial = mt * at;
+        
+        iptu = impostoPredial + impostoTerritorial;
+
+        window.alert("O imposto predial: R$" + impostoPredial);
+        window.alert("O imposto territorial: R$" + impostoTerritorial);
+        window.alert("O valor do IPTU: R$" + iptu);
+    </script>
+</body>
+</html>

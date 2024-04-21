@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        candidato1 = parseFloat(window.prompt("Digite o numero de votos do candidato 1"));
+        candidato2 = parseFloat(window.prompt("Digite o numero de votos do candidato 2"));
+        candidato3 = parseFloat(window.prompt("Digite o numero de votos do candidato 3"));
+        nulos = parseFloat(window.prompt("Digite o numero de votos nulos"));
+        brancos = parseFloat(window.prompt("Digite o numero de votos brancos"));
+
+        votosTotais = candidato1 + candidato2 + candidato3 + nulos + brancos;
+        votosValidos = candidato1 + candidato2 + candidato3;
+
+        calcVotos1 = candidato1 / votosValidos ;
+        calcVotos2 = candidato2 / votosValidos ;
+        calcVotos3 = candidato3 / votosValidos ;
+        calcNulos = nulos / votosTotais;
+        calcBrancos = brancos / votosTotais;
+
+        window.alert("O total de votos: " + votosTotais);
+        window.alert("O total de votos válidos: " + votosValidos);
+        window.alert("O percentual de votos do candidato 1: " + calcVotos1);
+        window.alert("O percentual de votos do candidato 2: " + calcVotos2);
+        window.alert("O percentual de votos do candidato 3: " + calcVotos3);
+        window.alert("O percentual de votos nulos: " + calcNulos);
+        window.alert("O percentual de votos brancos: " + calcBrancos);
+    </script>
+</body>
+</html>
