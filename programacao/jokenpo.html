@@ -1,30 +1,35 @@
 <script>
 
-do{
+   do {
 
-   jogada = parseInt(window.prompt("Escolha sua jogada! Pedra(1), Papel(2), Tesoura(3)"));
+      do {
 
-   do{
-      switch(jogada){
-         case 1: 
-            window.alert("Voce escolheu Pedra");
-            break;
-         case 2: 
-            window.alert("Voce escolheu Papel");
-            break;
-         case 3: 
-            window.alert("Voce escolheu Tesoura");
-            break;
-         default: 
-            window.alert("Opção inválida! Digite apenas números válidos!(1,2,3)");    
-       }
-        
-   }while(jogada < 1 || jogada > 3);
+         jogada = parseInt(window.prompt("Escolha sua jogada! Pedra(1), Papel(2), Tesoura(3)"));
 
-   
-   mach = Math.floor(Math.random() * 3 + 1);
+         if (jogada >= 1 && jogada <= 3) {
+            switch (jogada) {
+               case 1:
+                  window.alert("Voce escolheu Pedra");
+                  break;
+               case 2:
+                  window.alert("Voce escolheu Papel");
+                  break;
+               case 3:
+                  window.alert("Voce escolheu Tesoura");
+                  break;
+            }
 
-      switch(mach){
+         } else {
+            window.alert("Opção inválida! Digite apenas números válidos!(1,2,3)");
+         }
+
+      } while (jogada < 1 || jogada > 3);
+
+
+
+      mach = Math.floor(Math.random() * 3 + 1);
+
+      switch (mach) {
          case 1:
             window.alert("A maquina escolheu Pedra");
             break;
@@ -34,25 +39,31 @@ do{
          default:
             window.alert("A maquina escolheu Tesoura");
       }
-  
 
-   if(jogada === mach){
-      window.alert("EMPATE");
-   } else if(jogada == 1 && mach == 2){
-      window.alert("Voce perdeu...");
-   } else if(jogada == 1 && mach == 3){
-      window.alert("Voce venceu!")
-   } else if(jogada == 2 && mach == 1){
-      window.alert("Voce perdeu...");
-   } else if(jogada == 2 && mach == 3){
-      window.alert("Voce perdeu...")
-   } else if(jogada == 3 && mach == 1){
-      window.alert("Voce perdeu...");
-   } else{
-      window.alert("Voce venceu!")
-   }
-}while(true)
 
+      if (jogada === mach) {
+         window.alert("EMPATE");
+      } else if (jogada == 1 && mach == 2) {
+         window.alert("Voce perdeu...");
+      } else if (jogada == 1 && mach == 3) {
+         window.alert("Voce venceu!")
+      } else if (jogada == 2 && mach == 1) {
+         window.alert("Voce perdeu...");
+      } else if (jogada == 2 && mach == 3) {
+         window.alert("Voce perdeu...")
+      } else if (jogada == 3 && mach == 1) {
+         window.alert("Voce perdeu...");
+      } else {
+         window.alert("Voce venceu!")
+      }
+
+      continuar = window.confirm("Deseja continuar jogando?");
+
+
+   } while (continuar);
+
+
+</script>
 
 
 
