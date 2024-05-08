@@ -1,0 +1,388 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(255, 255, 255);
+  
+}
+
+/** Header **/
+
+header {
+  background-color: #202020;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  
+}
+
+header a:hover{
+  color: red;
+  transition: 0.5s;
+}
+
+.logo img{
+  height: 60px;
+  width: 100%;
+}
+
+.banner-section img{
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  margin: auto 20px;
+  font-family: Teko;
+  font-size: 25px;
+  text-transform: uppercase;
+ 
+  
+}
+
+header ul li a{
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+/** Index **/
+
+.title{
+  font-family: Teko;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+strong{
+  color:red
+}
+
+.button-section{
+  text-align: center;
+  margin-top: 20px;
+}
+
+button{
+  padding: 10px;
+  color: whitesmoke;
+  background: red;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  
+ 
+}
+
+button a:hover{
+  background: rgb(160, 2, 2);
+}
+
+
+.novidades{
+  padding: 60px;
+  
+}
+
+.news-card-section article {
+  width: 1000px;
+  margin: 10px auto;
+  margin-bottom: 50px;
+  
+}
+
+.news-card-section article p, h2{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.news1{
+  display: flex;
+  background: black;
+
+}
+
+.news1 .news1block img{
+  height: 470px;
+  
+}
+
+
+.news1-2 h2{
+  font-family: Teko;
+  margin-bottom: 20px;
+  margin-right: 80px;
+  text-align: center;
+  
+}
+
+
+
+
+.news1-2{
+  color: white;
+}
+
+
+
+
+/* news 2 */
+
+
+
+.news2 img{
+  height: 650px;
+  width: auto;
+}
+
+.news2block{
+  display: flex;
+
+}
+
+
+
+.news2block h2{
+  font-family: Teko;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.news-card-section article p {
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.news-card-section figure {
+  display: flex;
+  justify-content: space-between;
+}
+
+/** Loja **/
+
+
+.products-section article {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
+.services-section h2 {
+  padding: 60px;
+  font-size: 40px;
+  text-align: center;
+}
+
+.services-section article {
+  padding: 20px;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: space-evenly;
+}
+
+
+
+.services-cards figcaption{
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.services-cards p{
+  padding: 10px;
+  min-height: 200px ;
+  
+}
+
+.services-section figure{
+  margin-bottom: 100px;
+  max-width: 375px;
+  
+}
+
+.services-section img{
+  height: 250px;
+  width: 100%;
+  
+}
+/** Modalidades **/
+
+.modalidade{
+  padding: 50px;
+  font-size: 40px;
+}
+
+.martial-arts-section {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-image: url(../images/modalidades/background2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.martial-arts-section img{
+  max-width: 375px;
+  height: 300px;
+}
+
+.martial-arts-section article {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.938);
+  color: whitesmoke;
+}
+
+.martial-arts-section article button{
+ margin-bottom: 50px;
+ 
+}
+
+
+.martial-arts-section article h2 {
+  text-align: center;
+}
+
+.martial-arts-section article p {
+  margin-top: 25px;
+  margin-left: 35px;
+  margin-bottom: 40px;
+  min-height: 260px;
+  width: 300px;
+}
+
+.price-section article {
+  background-color: red;
+  width: 700px;
+  padding: 10px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-section article h2 {
+  font-size: 30px;
+  margin: 15px 0;
+}
+
+.price-section article ul li {
+  margin: 10px;
+  list-style: none;
+}
+
+.price-section article button {
+  background-color: #F1C40F;
+  border-style: none;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/** Sobre **/
+
+.place-section h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.place-section article {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.owner-section {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owner-section img {
+  margin-right: 20px;
+}
+
+.owner-section article h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+.owner-section article p {
+  text-align: justify;
+}
+
+.masters-section h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+.masters-section article {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/** Contato **/
+
+.form-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section h1 {
+  font-size: 30px;
+}
+
+.form-section article {
+  margin: 20px;
+}
+
+/** Footer **/
+
+footer {
+  background-color: #202020;
+  padding: 10px;
+  color: whitesmoke;
+}
+
+footer section { 
+  width: 100px;
+  
+}
+
+
+
+footer section ul li {
+  list-style: none;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+}
