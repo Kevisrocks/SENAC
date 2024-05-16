@@ -1,0 +1,22 @@
+<script>
+    const num = []
+    const par = []
+    const impar = []
+
+    for(i=0; i<10; i++){
+        valor = parseInt(window.prompt("digite um valor"))
+        num.push(valor)
+    }
+
+    for(i=0; i <= num.length; i++){
+        if(num[i] % 2 ==0){
+            par.push(num[i])
+        }else{
+            impar.push(num[i])
+        }
+    }
+
+    document.write(par + "<br>")
+    document.write(impar)
+   
+</script>

@@ -1,0 +1,20 @@
+<script>
+
+    const num = [];
+
+    for (i = 1; i <= 5; i++) {
+        valor = parseInt(window.prompt("digite um numero"));
+        num.push(valor)
+    }
+
+    for (i=0; i<num.length; i++){
+        document.write(num[i] + "<br>")
+    }
+    document.write("<br>")
+
+    for(i = num.length - 1; i >= 0; i--){
+        document.write(num[i] + "<br>")
+    }
+
+    
+</script>
