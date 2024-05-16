@@ -4,9 +4,10 @@
 }
 
 body {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: whitesmoke;
   
+
 }
 
 /** Header **/
@@ -17,20 +18,20 @@ header {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  
+
 }
 
-header a:hover{
+header a:hover {
   color: red;
   transition: 0.5s;
 }
 
-.logo img{
+.logo img {
   height: 60px;
   width: 100%;
 }
 
-.banner-section img{
+.banner-section img {
   height: auto;
   width: 100%;
   display: block;
@@ -46,11 +47,11 @@ header ul li {
   font-family: Teko;
   font-size: 25px;
   text-transform: uppercase;
- 
-  
+
+
 }
 
-header ul li a{
+header ul li a {
   color: #FFFFFF;
 }
 
@@ -60,24 +61,28 @@ a {
 
 /** Index **/
 
-.title{
+.title {
   font-family: Teko;
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  
+
 }
 
-strong{
-  color:red
+strong {
+  color: red
 }
 
-.button-section{
+span {
+  color: red;
+}
+
+.button-section {
   text-align: center;
   margin-top: 20px;
 }
 
-button{
+button {
   padding: 10px;
   color: whitesmoke;
   background: red;
@@ -86,57 +91,62 @@ button{
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
-  
  
 }
 
-button a:hover{
+button:hover {
   background: rgb(160, 2, 2);
 }
 
+a {
+  color: inherit; /* Define a cor para ser a mesma do elemento pai */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
 
-.novidades{
+
+.novidades {
   padding: 60px;
-  
+
 }
 
 .news-card-section article {
   width: 1000px;
   margin: 10px auto;
   margin-bottom: 50px;
-  
+
 }
 
-.news-card-section article p, h2{
+.news-card-section article p,
+h2 {
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
 }
 
-.news1{
+.news1 {
   display: flex;
   background: black;
 
 }
 
-.news1 .news1block img{
+.news1 .news1block img {
   height: 470px;
-  
+
 }
 
 
-.news1-2 h2{
+.news1-2 h2 {
   font-family: Teko;
   margin-bottom: 20px;
   margin-right: 80px;
   text-align: center;
-  
+
 }
 
 
 
 
-.news1-2{
+.news1-2 {
   color: white;
 }
 
@@ -147,19 +157,19 @@ button a:hover{
 
 
 
-.news2 img{
+.news2 img {
   height: 650px;
   width: auto;
 }
 
-.news2block{
+.news2block {
   display: flex;
 
 }
 
 
 
-.news2block h2{
+.news2block h2 {
   font-family: Teko;
   font-size: 30px;
   margin-bottom: 20px;
@@ -183,7 +193,7 @@ button a:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
+
 }
 
 .services-section h2 {
@@ -195,13 +205,13 @@ button a:hover{
 .services-section article {
   padding: 20px;
   display: flex;
-  flex-wrap:wrap ;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 
 
-.services-cards figcaption{
+.services-cards figcaption {
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -209,26 +219,27 @@ button a:hover{
   text-align: center;
 }
 
-.services-cards p{
+.services-cards p {
   padding: 10px;
-  min-height: 200px ;
-  
+  min-height: 200px;
+
 }
 
-.services-section figure{
+.services-section figure {
   margin-bottom: 100px;
   max-width: 375px;
-  
+
 }
 
-.services-section img{
+.services-section img {
   height: 250px;
   width: 100%;
-  
+
 }
+
 /** Modalidades **/
 
-.modalidade{
+.modalidade {
   padding: 50px;
   font-size: 40px;
 }
@@ -244,20 +255,17 @@ button a:hover{
   background-size: cover;
 }
 
-.martial-arts-section img{
+.martial-arts-section img {
   max-width: 375px;
   height: 300px;
 }
 
 .martial-arts-section article {
-  margin: 10px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
   background-color: rgba(0, 0, 0, 0.938);
   color: whitesmoke;
-}
-
-.martial-arts-section article button{
- margin-bottom: 50px;
- 
 }
 
 
@@ -273,9 +281,15 @@ button a:hover{
   width: 300px;
 }
 
+.martial-arts-section article button {
+  margin-bottom: 50px;
+
+}
+
 .price-section article {
-  background-color: red;
-  width: 700px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 500px;
   padding: 10px;
   margin: 20px auto;
   display: flex;
@@ -284,72 +298,123 @@ button a:hover{
 }
 
 .price-section article h2 {
-  font-size: 30px;
+  font-size: 50px;
   margin: 15px 0;
 }
 
 .price-section article ul li {
   margin: 10px;
   list-style: none;
+
 }
 
 .price-section article button {
-  background-color: #F1C40F;
+  background-color: #ffcc00;
+  color: black;
   border-style: none;
-  border-radius: 10px;
-  padding: 15px;
-  margin: 10px 0;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 30px 0;
   font-weight: bold;
+}
+
+.price-section button:hover {
+  background: #b89300;
 }
 
 /** Sobre **/
 
+.banner-sobre img {
+  width: 100%;
+}
+
 .place-section h2 {
   text-align: center;
   margin: 20px;
+  margin-top: 50px;
 }
 
 .place-section article {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.place-section img {
+  height: 200px;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 .owner-section {
-  padding: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.owner-section img {
+.fabio-photo img {
+  margin-left: 43.5px;
   margin-right: 20px;
+
+  width: 400px;
 }
 
-.owner-section article h2 {
-  text-align: center;
-  margin: 10px;
+.title-fabio {
+  margin: 60px;
 }
 
 .owner-section article p {
   text-align: justify;
+  max-width: 90%;
+  margin-bottom: 80px;
+}
+
+.owner-section ul li {
+  list-style: circle;
+  list-style-position: inside;
+
+}
+
+.title-titulo {
+  text-align: right;
+  margin-top: 30px;
+  width: 400px;
+}
+
+.trophy-content {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.trophy {
+  margin-top: 30px;
+}
+
+.masters-section img{
+  height: 300px;
 }
 
 .masters-section h2 {
   text-align: center;
-  margin: 20px;
+  margin: 60px;
 }
 
 .masters-section article {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.masters-section p{
+  text-align: center;
+  font-weight: bold;
 }
 
 /** Contato **/
 
-.form-section{
+.form-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -357,6 +422,19 @@ button a:hover{
 
 .form-section h1 {
   font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form-section input {
+  margin-left: 38px;
+  width: 300px;
+
+}
+
+textarea {
+  resize: none;
+  margin-left: 10px;
 }
 
 .form-section article {
@@ -369,14 +447,13 @@ footer {
   background-color: #202020;
   padding: 10px;
   color: whitesmoke;
+ 
 }
 
-footer section { 
-  width: 100px;
-  
+footer section {
+  width: 100%;
+
 }
-
-
 
 footer section ul li {
   list-style: none;
@@ -384,5 +461,30 @@ footer section ul li {
 
 footer p {
   text-align: center;
-  font-size: 12px;
+  font-size: 15px;
+  margin-bottom: 50px;
 }
+
+.icon-index{
+  display: flex;
+  justify-content: center;
+}
+
+
+.social-icons ul{
+  display: flex;
+  justify-content: flex-end; 
+  padding: 10px;
+}
+
+.social-icons img{
+  height: 40px;
+  margin-left: 15px;
+  
+}
+
+
+
+
+
+
