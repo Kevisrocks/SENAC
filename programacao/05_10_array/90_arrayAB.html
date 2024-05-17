@@ -1,0 +1,29 @@
+<script>
+
+const numA = []
+const numB = []
+
+for(i=0; i<10; i++){
+    valor = parseInt(window.prompt("digite os numeros"))
+    numA.push(valor)
+}
+
+
+for(i=0; i<numA.length; i++){
+    if(numA[i] % 2 == 0){
+        numB.push(numA[i] * 2)
+    }else{
+        numB.push(numA[i] * 3)
+    }
+}
+
+document.write(numA + "<br>")
+document.write(numB + "<br>")
+
+
+
+
+
+
+
+</script>
