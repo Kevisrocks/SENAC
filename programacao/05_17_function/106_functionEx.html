@@ -1,0 +1,27 @@
+<script>
+    function calc(n1, n2){
+       med = (n1 + n2) / 2
+       return med
+    }
+
+    function aprovado(nf, notaMinima){
+        if(nf >=notaMinima){
+            return true
+        }else{
+            return false
+        }
+    }
+
+    
+    notaMinima = parseFloat(window.prompt("digite a média necessaria"))
+    n1 = parseFloat(window.prompt("digite o numero 1"))
+    n2 = parseFloat(window.prompt("digite o numero 2"))
+    med = calc(n1,n2)
+    
+    if(aprovado(med, notaMinima)){
+        document.write("Aprovado!")
+    } else{
+        document.write("Reprovado")
+    }
+    
+</script>
