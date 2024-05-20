@@ -222,7 +222,7 @@ h2 {
 .services-cards p {
   padding: 10px;
   min-height: 200px;
-
+  text-align: justify;
 }
 
 .services-section figure {
@@ -279,6 +279,7 @@ h2 {
   margin-bottom: 40px;
   min-height: 260px;
   width: 300px;
+  text-align: justify;
 }
 
 .martial-arts-section article button {
